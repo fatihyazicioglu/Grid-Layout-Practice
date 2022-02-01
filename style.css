@@ -19,11 +19,36 @@
 
 .container{
  display: grid;
- grid-template-rows: 150px 250px; 
- grid-template-columns: 100px 200px 300px;
+ grid-template-rows: 150px 250px ; 
+ grid-template-columns: 1fr 2fr 3fr;
  /* if you put / in between, it is same;
  grid-template:150px 250px / 100px 200px 300px
   */
+  /* grid-row-gap: 10px;
+grid-column-gap: 10px; */
+grid-gap:10px 10px
+grid-template-ares
+" A A C "
+" D E F "
+}
+
+.box1{
+    grid-area: A;
+}
+.box2{
+    grid-area: B;
+}
+.box3{
+    grid-area: C;
+}
+.box4{
+    grid-area: D;
+}
+.box5{
+    grid-area: E;
+}
+.box6{
+    grid-area: F;
 }
 
 /* px yerine fr kullan. sayfayi oranlar */
@@ -32,3 +57,26 @@
     order:1 ;
 } */
 
+.box3{
+    /* box position changeing
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-end: 3;
+    grid-column-start: 2; */
+}
+
+.box3
+    {
+    /* box position changeing
+    grid-row-start: 2; 
+    /* grid-row:2/3 seklinde de yazilabilir */
+    grid-row-end: 3;
+    grid-column-end: 3;
+    grid-column-start: 2; 
+} 
+
+
+.box4{
+    grid-row: 1/2;
+    grid-column:2/4;
+}
